@@ -5,6 +5,7 @@
             echo json_encode($array)." ".json_encode($removed)." true\n";
             return true;
         }
+        for($i = 0;$i < count($array)  ;$i++){            
             for($j = 0;$j < count($array)-1  ;$j++){
                 if($i != $j){
                     if($array[$i] < $array[$i+1]){
